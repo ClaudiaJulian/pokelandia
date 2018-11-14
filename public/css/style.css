@@ -1,10 +1,14 @@
+*{ box-sizing: border-box; }
+a{text-decoration: none;}
+
 html, body {
-    background-color: #fff;
+    background-color:#fff ;
     color: #636b6f;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     min-height: 100vh;
     margin: 0;
+    padding:0px;
 }
 
 .full-height {
@@ -30,7 +34,7 @@ html, body {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 0pc 15px;
+    padding: 0px 15px;
 }
 
 .main-nav_links,
@@ -51,7 +55,11 @@ footer>ul a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+}
+
+ul{
+    padding:0px;
 }
 
 .title {
@@ -67,9 +75,63 @@ footer>ul a{
     text-decoration: none;
     text-transform: uppercase;
 }
-
+.links {
+    color: #636b6f;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+}
 .m-b-md {
     margin-bottom: 30px;
+}
+
+.titulo {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    border:solid white 0.5px;
+    border-radius: 10%;
+}
+
+.index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.typebutton{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin:2vw;
+    border: solid grey 1px;
+    border-radius: 10%;
+}
+
+.pokebutton{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin:2vw;
+    border: solid grey 1px;
+    border-radius: 10%;
+}
+
+.poke {
+    width: 10vw;
+}
+
+.pokecard {
+    border: solid grey 1px;
+    border-radius: 10%;
+    padding:0px;
+    margin: 10px 5px;
+    min-width: 70px
 }
 
 footer{

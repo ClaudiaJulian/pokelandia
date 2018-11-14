@@ -1,24 +1,47 @@
 @extends('Template.basic')
 
 @section('content')
-<section class="types">
-  <a href="{{ route('tipo',['tipo' => $tipo->id]) }}">
+
+<!-- <section class="types">
   <article class="type" style="background-color:{{$tipo->color}}">
+    <a href="{{ route('tipo',['tipo' => $tipo->id]) }}">
       <h3>{{ $tipo->name }}</h3>
-    </article>
-  </a>
-</section>
-<section class="pokemon">
+    </a>
+  </article>
+</section> -->
+
+<section class="content">
+  <article> 
+      <a href="{{ route('tipo','') }}">
+      <h2 class="titulo" style="background-color:{{$tipo->color }}">{{ $tipo->name }}</h2>
+      </a>
+  </article> 
+
+  <div class="index">
   @foreach($tipo->pokemon as $poke)
-  <a href="{{ route('pokemon.uno',['pokemon' => $poke->id]) }}">
-    <article class="poke {{ $tipo->name }}">
-    <img src="{{ asset('poke-img/images/poke-'.$poke->id.'.jpg') }}" alt="Icono de {{ $poke->name }}">
-      <h3>{{ $poke->name }}</h3>
-      <h4>{{ $poke->weight }}</h4>
-      <h4>{{ $poke->height }}</h4>
-      <h4>{{ $poke->evolves }}</h4>
+    <article class="pokecard">
+        <a href="{{ route('pokemon.uno',['pokemon' => $poke->id]) }}">
+            <ul>
+            <img src="{{ asset('poke-img/images/poke-'.$poke->id.'.jpg') }}" alt="Icono de {{ $poke->name }}">
+            <h3>{{ $poke->name }}</h3>
+            </ul>
+        </a> 
+
+        <ul class="index">     
+            @foreach($poke->tipo as $tipo)
+               <a class="links" href="{{ route('tipo',['tipo'=>$tipo->name]) }}"><li style="list-style:none">{{ $tipo->name }}</li></a>
+            @endforeach
+        </ul>
+
+        <ul>
+        <h5>{{ 'Weight: ' . $poke->weight }}</h5>
+        <h5>{{ 'Height: ' . $poke->height }}</h5>
+        <h5>{{ 'Evolves: ' . $poke->evolves }}</h5>
+        </ul>
+
     </article>
-  </a>
   @endforeach
+  </div>
 </section>
+
 @endsection

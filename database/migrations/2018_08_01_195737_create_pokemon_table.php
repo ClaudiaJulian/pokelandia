@@ -15,13 +15,10 @@ class CreatePokemonTable extends Migration
     {
         Schema::create('pokemon', function (Blueprint $table) {
             $table->increments('id');
-
             $table->string('name');
             $table->decimal('weight', 6, 2);
             $table->decimal('height', 6, 2);
-            $table->tinyinteger('type_id');
             $table->integer('evolves')->nullable();
-
             $table->timestamps();
         });
     }
