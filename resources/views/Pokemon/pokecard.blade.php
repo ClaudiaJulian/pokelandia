@@ -27,8 +27,10 @@
 
         <div class="index">
         <p ><a class="links" href="/pokemon/{{ $pokes['name'] }}/editar">Editar</a></p>
+        <p ><a class="links" href="/pokemon/nuevo">Nuevo</a></p>
         <p ><a class="links" href="/pokemon/{{ $pokes['id'] }}/borrar">Borrar</a></p>
-        <p ><a class="links" href="/pokemon">Ver más Pokemon</a></p>
+        <p ><a class="links" href="/pokemon">Más Pokemon</a></p>
+        <p ><a class="links" href="/type">Types</a></p>
         </div>
         
     </section>

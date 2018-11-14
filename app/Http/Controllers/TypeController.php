@@ -51,7 +51,7 @@ class TypeController extends Controller
            'color' => $request->input('color')         
        ]);
 
-       return redirect('/type/nuevo');
+       return redirect('/type');
     }
 
 

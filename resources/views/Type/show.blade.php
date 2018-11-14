@@ -38,9 +38,17 @@
         <h5>{{ 'Height: ' . $poke->height }}</h5>
         <h5>{{ 'Evolves: ' . $poke->evolves }}</h5>
         </ul>
-
+        
     </article>
   @endforeach
+  </div>
+
+  <div class="index">
+          <p ><a class="links" href="/type/{{ $tipo['name'] }}/editar">Editar</a></p>
+          <p ><a class="links" href="/type/nuevo">Nuevo</a></p>
+          <p ><a class="links" href="/type/{{ $tipo['id'] }}/borrar">Borrar</a></p>
+          <p ><a class="links" href="/type">Más Types</a></p>
+          <p ><a class="links" href="/pokemon">Pokemon</a></p>
   </div>
 </section>
 

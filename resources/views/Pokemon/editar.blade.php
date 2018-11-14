@@ -35,6 +35,11 @@
     <button type="submit" name="button">Guardar Pokemon</button>
    
 </form>
+
+    <div class="index">          
+          <p ><a class="links" href="/pokemon">Pokemon</a></p>    
+          <p ><a class="links" href="/type">Types</a></p>
+    </div>
 <section>
 
 <!-- <?php var_dump($_POST)?> -->

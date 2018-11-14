@@ -22,6 +22,10 @@
     
     </div> 
 
+    <div class="index">          
+          <p ><a class="links" href="/pokemon/nuevo">Nuevo Pokemon</a></p>    
+          <p ><a class="links" href="/type">Types</a></p>
+    </div>
 </section>
 
 @endsection

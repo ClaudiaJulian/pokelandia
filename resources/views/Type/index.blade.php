@@ -17,7 +17,10 @@
    
     @endforeach
     </ul>
-    
+    <div class="index">          
+          <p ><a class="links" href="/type/nuevo">Nuevo Type</a></p>    
+          <p ><a class="links" href="/pokemon">Pokemon</a></p>
+    </div>
   </section>
 
 @endsection

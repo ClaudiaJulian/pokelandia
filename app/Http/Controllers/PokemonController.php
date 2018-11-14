@@ -50,7 +50,7 @@ class PokemonController extends Controller
        
         $pokemon->tipo()->sync($request->input('typeid'));
 
-       return redirect('/pokemon/nuevo');
+       return redirect('/pokemon');
     }
 
     
