@@ -16,64 +16,55 @@ class PokemonSeeder extends Seeder
             'name' => 'Bulbasaur',
             'weight' => '6.9',
             'height' => '0.7',
-            'type_id' => 11,
-            'evolves' => 2,
+            'evolves' => 'Bulzaxzu',            
         ]);
         Pokemon::create([
             'name' => 'Ivysaur',
             'weight' => '13',
             'height' => '1.0',
-            'type_id' => 11,
-            'evolves' => 3,
+            'evolves' => 'Ivanux',           
         ]);
         Pokemon::create([
             'name' => 'Venausaur',
             'weight' => '100',
             'height' => '2.0',
-            'type_id' => 11,
-            'evolves' => null,
+            'evolves' =>'Vanutxo',          
         ]);
         Pokemon::create([
             'name' => 'Charmander',
             'weight' => '8.5',
             'height' => '0.6',
-            'type_id' => 9,
-            'evolves' => 5,
+            'evolves' => 'Chaztrix',          
         ]);
         Pokemon::create([
             'name' => 'Charmeleon',
             'weight' => '19',
             'height' => '1.1',
-            'type_id' => 9,
-            'evolves' => 6,
+            'evolves' => 'Charmuco',         
         ]);
         Pokemon::create([
             'name' => 'Charizard',
             'weight' => '90.5',
             'height' => '1.7',
-            'type_id' => 9,
-            'evolves' => null,
+            'evolves' => 'Chuttux',           
         ]);
         Pokemon::create([
             'name' => 'Squirtle',
             'weight' => '9',
             'height' => '0.5',
-            'type_id' => 10,
-            'evolves' => 8,
+            'evolves' => 'Squix',           
         ]);
         Pokemon::create([
             'name' => 'Wartortle',
             'weight' => '22.5',
             'height' => '1',
-            'type_id' => 10,
-            'evolves' => 9,
+            'evolves' => 'Wax',          
         ]);
         Pokemon::create([
             'name' => 'Blastoise',
             'weight' => '85.5',
             'height' => '1.6',
-            'type_id' => 10,
-            'evolves' => null,
+            'evolves' => 'Blastanium',          
         ]);
     }
 }

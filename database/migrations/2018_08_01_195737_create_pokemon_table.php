@@ -18,7 +18,7 @@ class CreatePokemonTable extends Migration
             $table->string('name');
             $table->decimal('weight', 6, 2);
             $table->decimal('height', 6, 2);
-            $table->integer('evolves')->nullable();
+            $table->string('evolves')->nullable();
             $table->timestamps();
         });
     }
